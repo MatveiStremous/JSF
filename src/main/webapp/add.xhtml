@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>ADDING</title>
+</h:head>
+<h:body>
+    <h:form>
+        <h3>Name</h3>
+        <h:inputText value="#{personBean.name}"></h:inputText>
+        <h3>Surname</h3>
+        <h:inputText value="#{personBean.surname}"></h:inputText>
+        <h3>Age</h3>
+        <h:inputText value="#{personBean.age}"></h:inputText>
+        <h3>Gender</h3>
+        <h:selectOneMenu value="#{personBean.gender}">
+            <f:selectItem itemLabel="MALE" itemValue="MALE"/>
+            <f:selectItem itemLabel="FEMALE" itemValue="FEMALE"/>
+        </h:selectOneMenu>
+        <h:commandButton action="#{personBean.save()}" value="ADD"></h:commandButton>
+    </h:form>
+</h:body>
+</html>
