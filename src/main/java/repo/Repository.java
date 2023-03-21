@@ -1,9 +1,14 @@
+package repo;
+
+import entity.Person;
+import jakarta.ejb.Singleton;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
 import java.util.List;
 
+@Singleton
 public class Repository {
     private EntityManagerFactory entityManagerFactory;
 

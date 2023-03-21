@@ -11,17 +11,25 @@
 <h:body>
     <h:form>
         <h3>Name</h3>
-        <h:inputText value="#{personBean.name}"></h:inputText>
+        <h:inputText value="#{personBean.name}" required="true"></h:inputText>
         <h3>Surname</h3>
-        <h:inputText value="#{personBean.surname}"></h:inputText>
+        <h:inputText value="#{personBean.surname}" required="true"></h:inputText>
         <h3>Age</h3>
-        <h:inputText value="#{personBean.age}"></h:inputText>
+        <h:inputText value="#{personBean.age}" required="true">
+            <f:validateLongRange minimum="0" maximum="110"/>
+        </h:inputText>
         <h3>Gender</h3>
         <h:selectOneMenu value="#{personBean.gender}">
             <f:selectItem itemLabel="MALE" itemValue="MALE"/>
             <f:selectItem itemLabel="FEMALE" itemValue="FEMALE"/>
         </h:selectOneMenu>
+        <br></br>
+        <h:messages errorStyle="color:red"/>
+        <br></br>
         <h:commandButton action="#{personBean.save()}" value="ADD"></h:commandButton>
     </h:form>
+    <br></br>
+    <br></br>
+    <h:button outcome="hello.xhtml" value="BACK"></h:button>
 </h:body>
 </html>

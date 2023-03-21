@@ -1,27 +1,29 @@
+package entity;
+
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "person")
 public class Person {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
     private String surname;
-    private Long age;
+    private Integer age;
     private String gender;
     public Person() {
     }
 
-    public Person(String name, String surname, Long age, String gender) {
+    public Person(String name, String surname, Integer age, String gender) {
         this.name = name;
         this.surname = surname;
         this.age = age;
         this.gender = gender;
     }
 
-    public Person(Long id, String name, String surname, Long age, String gender) {
+    public Person(Long id, String name, String surname, Integer age, String gender) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -49,11 +51,11 @@ public class Person {
         this.surname = surname;
     }
 
-    public Long getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(Long age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
@@ -63,5 +65,16 @@ public class Person {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "entity.Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                '}';
     }
 }
