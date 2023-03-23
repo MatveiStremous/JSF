@@ -12,13 +12,15 @@
 <h:body>
     <h:form>
         <h3>Enter ID</h3>
-        <h:inputText value="#{personBean.id}" required="true"></h:inputText>
+        <h:inputText value="#{personBean.id}" id="idInput">
+            <f:validator validatorId="idValidator"/>
+        </h:inputText>
         <br></br>
+        <h:message for="idInput" errorStyle="color:red" />
         <br></br>
         <h:commandButton action="#{personBean.showPerson(personBean.id)}" value="FIND BY ID"></h:commandButton>
     </h:form>
     <br></br>
-    <h:messages errorStyle="color:red"/>
     <br></br>
     <h:button outcome="hello.xhtml" value="BACK"></h:button>
 </h:body>

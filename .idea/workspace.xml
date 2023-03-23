@@ -10,24 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ce5a2a4-eeda-4b29-a071-611e9c3b6eff" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/managebean/PersonBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/updateById.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/viewById.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/valid/AgeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/valid/IdValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/valid/StringValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PersonBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managebean/PersonBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managebean/PersonBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/add.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/delete.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/delete.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/getAll.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/getAll.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/getById.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/getById.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/hello.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hello.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/update.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/update.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateById.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateById.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +63,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -116,6 +109,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\University\6semester\RIS\JSF\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="valid" />
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.TomEE 10.0.27">
@@ -240,7 +236,18 @@
       <workItem from="1679311414701" duration="3199000" />
       <workItem from="1679316839926" duration="4889000" />
       <workItem from="1679385393117" duration="144000" />
+      <workItem from="1679385573105" duration="729000" />
+      <workItem from="1679469113816" duration="6945000" />
+      <workItem from="1679604775623" duration="3253000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1679385580535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679385580535</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

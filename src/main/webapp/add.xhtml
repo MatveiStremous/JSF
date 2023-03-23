@@ -3,7 +3,6 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
     <title>ADDING</title>
@@ -11,20 +10,26 @@
 <h:body>
     <h:form>
         <h3>Name</h3>
-        <h:inputText value="#{personBean.name}" required="true"></h:inputText>
-        <h3>Surname</h3>
-        <h:inputText value="#{personBean.surname}" required="true"></h:inputText>
-        <h3>Age</h3>
-        <h:inputText value="#{personBean.age}" required="true">
-            <f:validateLongRange minimum="0" maximum="110"/>
+        <h:inputText value="#{personBean.name}" id="nameInput">
+            <f:validator validatorId="stringValidator"/>
         </h:inputText>
+        <h:message for="nameInput" errorStyle="color:red"/>
+        <h3>Surname</h3>
+        <h:inputText value="#{personBean.surname}" id="surnameInput">
+            <f:validator validatorId="stringValidator"/>
+        </h:inputText>
+        <h:message for="surnameInput" errorStyle="color:red"/>
+        <h3>Age</h3>
+        <h:inputText value="#{personBean.age}" id="ageInput">
+            <f:validator validatorId="ageValidator"/>
+        </h:inputText>
+        <h:message for="ageInput" errorStyle="color:red" />
         <h3>Gender</h3>
         <h:selectOneMenu value="#{personBean.gender}">
             <f:selectItem itemLabel="MALE" itemValue="MALE"/>
             <f:selectItem itemLabel="FEMALE" itemValue="FEMALE"/>
         </h:selectOneMenu>
         <br></br>
-        <h:messages errorStyle="color:red"/>
         <br></br>
         <h:commandButton action="#{personBean.save()}" value="ADD"></h:commandButton>
     </h:form>
